@@ -88,6 +88,36 @@ section {
   margin: 20px;
   padding: 20px;
 }
+    /* ===== ANIMACIONES ===== */
+.animar {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== EFECTO TARJETAS ===== */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ===== EFECTO IMÁGENES ===== */
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
 </style>
 <body>
 <nav>
